@@ -103,7 +103,7 @@ function showDashboard(){
                 </div>
                 <div class="form-white mb-3" v-show="registrationFlag===true">
                   <label  for="confirmPasswordX">Confirm Password</label>
-                  <input @input="validationConfirmPassword()" type="password" id="confirmPassword" class="form-control form-control-lg" :style="checkConfirmPass()===true? 'color:green':'color:red'" v-model="data.confirmPassword" />
+                  <input @input="validationConfirmPassword()" type="password" id="confirmPassword" class="form-control form-control-lg" :style="checkConfirmPass()===true? 'color:green; outline-style: solid; outline-color:green':'color:red'" v-model="data.confirmPassword" />
                   <span :class="validationFlag.confirmPasswordValidationFlag===true?'text-success':'text-danger'">{{confirmValidationMessage}}</span>
                 </div>
                 <div class="button text-center">
